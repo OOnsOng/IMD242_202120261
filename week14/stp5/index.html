@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sketch</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="sketch.js" defer></script>
+  </head>
+  <body>
+    <div class="section">
+      <div class="container">
+        <input
+          class="range range-size"
+          type="range"
+          min="10"
+          max="200"
+          step="1"
+          value="10"
+        />
+        <input
+          class="range range-color range-color-r"
+          type="range"
+          min="0"
+          max="255"
+          step="1"
+          value="0"
+        />
+        <input
+          class="range range-color range-color-g"
+          type="range"
+          min="0"
+          max="255"
+          step="1"
+          value="0"
+        />
+        <input
+          class="range range-color range-color-b"
+          type="range"
+          min="0"
+          max="255"
+          step="1"
+          value="0"
+        />
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div id="canvas-container"></div>
+      </div>
+    </div>
+    <p class="value value-r"></p>
+    <p class="value value-g"></p>
+    <p class="value value-b"></p>
+  </body>
+</html>
